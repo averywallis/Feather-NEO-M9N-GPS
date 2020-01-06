@@ -1,4 +1,4 @@
-16428039877798300
+16456448656443555
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -44806,6 +44806,125 @@ single digit 7 segemnt red/green LED
 0
 10
 10
+Feather-NEO-M9N-GPS
+74LVC1G27GM115
+SOT886 (XSON6)
+Integrated Circuit
+0
+6
+6
+Feather-NEO-M9N-GPS
+BatteryHolder_Seiko_MS621F
+Seiko MS621F, https://www.sii.co.jp/en/me/files/2014/02/file_EXTENDED_PRDCT_SPEC_75_FILE_11.jpg
+Seiko MS621F
+0
+2
+2
+Feather-NEO-M9N-GPS
+C_0603_1608Metric
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+Feather-NEO-M9N-GPS
+D_SOD-323F
+SOD-323F http://www.nxp.com/documents/outline_drawing/SOD323F.pdf
+SOD-323F
+0
+2
+2
+Feather-NEO-M9N-GPS
+LED_0603_1608Metric
+LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+diode
+0
+2
+2
+Feather-NEO-M9N-GPS
+L_0805_2012Metric
+Inductor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+inductor
+0
+2
+2
+Feather-NEO-M9N-GPS
+MountingHole_2.2mm_M2_DIN965_Pad
+Mounting Hole 2.2mm, M2, DIN965
+mounting hole 2.2mm m2 din965
+0
+1
+1
+Feather-NEO-M9N-GPS
+MountingHole_2.5mm
+Mounting Hole 2.5mm, no annular
+mounting hole 2.5mm no annular
+0
+0
+0
+Feather-NEO-M9N-GPS
+PinHeader_1x12_P2.54mm_Vertical
+Through hole straight pin header, 1x12, 2.54mm pitch, single row
+Through hole pin header THT 1x12 2.54mm single row
+0
+12
+12
+Feather-NEO-M9N-GPS
+PinHeader_1x16_P2.54mm_Vertical
+Through hole straight pin header, 1x16, 2.54mm pitch, single row
+Through hole pin header THT 1x16 2.54mm single row
+0
+16
+16
+Feather-NEO-M9N-GPS
+R_0603_1608Metric
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
+Feather-NEO-M9N-GPS
+SMT-JUMPER_3_2-NC_TRACE_SILK
+
+
+0
+3
+3
+Feather-NEO-M9N-GPS
+SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm
+SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip
+solder jumper open
+0
+2
+2
+Feather-NEO-M9N-GPS
+SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
+SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open
+solder jumper open
+0
+2
+2
+Feather-NEO-M9N-GPS
+UFLRSMT10
+U.FL-R-SMT(10)-2
+Connector
+0
+3
+3
+Feather-NEO-M9N-GPS
+USB_Micro-B_Molex_47346-0001
+Micro USB B receptable with flange, bottom-mount, SMD, right-angle (http://www.molex.com/pdm_docs/sd/473460001_sd.pdf)
+Micro B USB SMD
+0
+11
+6
+Feather-NEO-M9N-GPS
+ublox_NEO
+ublox NEO 6/7/8, (https://www.u-blox.com/sites/default/files/NEO-8Q-NEO-M8-FW3_HardwareIntegrationManual_%28UBX-15029985%29_0.pdf)
+GPS ublox NEO 6/7/8
+0
+24
+24
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -66940,6 +67059,13 @@ Connector
 0
 12
 12
+SamacSys_Parts
+SOD2513X110N
+SOD323
+Diode
+0
+2
+2
 SamacSys_Parts
 SOIC127P600X175-16N
 SOIC127P600X175-16N
