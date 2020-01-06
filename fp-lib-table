@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Feather-NEO-M9N-GPS)(type KiCad)(uri ${KIPRJMOD}/Feather-NEO-M9N-GPS.pretty)(options "")(descr ""))
+)
