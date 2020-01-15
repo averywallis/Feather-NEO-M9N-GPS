@@ -164,18 +164,6 @@ F 3 "" H 2150 4100 50  0001 C CNN
 	1    2150 4100
 	1    0    0    -1  
 $EndComp
-$Comp
-L SamacSys_Parts:U.FL ANT1
-U 1 1 5E064AD8
-P 1800 4500
-F 0 "ANT1" H 2254 5673 50  0000 C CNN
-F 1 "U.FL" H 2254 5582 50  0000 C CNN
-F 2 "UFLRSMT10" H 2750 4600 50  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 2750 4500 50  0001 L CNN
-F 4 "U.FL-R-SMT(10)" H 2750 4100 50  0001 L CNN "MPN"
-	1    1800 4500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2150 4100 2150 3900
 $Comp
@@ -204,7 +192,6 @@ F 4 "ESR03EZPF10R0" V 2950 4200 50  0001 C CNN "MPN"
 $EndComp
 Wire Wire Line
 	4850 3650 2500 3650
-Connection ~ 2500 3650
 Wire Wire Line
 	3100 3750 4850 3750
 NoConn ~ 4850 3850
@@ -1398,4 +1385,17 @@ Wire Wire Line
 	9750 1350 10000 1350
 Wire Wire Line
 	10300 1350 10650 1350
+Connection ~ 2500 3650
+$Comp
+L SamacSys_Parts:U.FL ANT1
+U 1 1 5E064AD8
+P 1800 4500
+F 0 "ANT1" H 2150 5650 50  0000 C CNN
+F 1 "U.FL" H 2150 5550 50  0000 C CNN
+F 2 "UFLRSMT10" H 2750 4600 50  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 2750 4500 50  0001 L CNN
+F 4 "U.FL-R-SMT(10)" H 2750 4100 50  0001 L CNN "MPN"
+	1    1800 4500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
