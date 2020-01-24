@@ -1,4 +1,4 @@
-16456448656443555
+16462762305104086
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -44863,6 +44863,13 @@ mounting hole 2.5mm no annular
 0
 0
 Feather-NEO-M9N-GPS
+NEO-M9N
+
+
+0
+24
+24
+Feather-NEO-M9N-GPS
 PinHeader_1x12_P2.54mm_Vertical
 Through hole straight pin header, 1x12, 2.54mm pitch, single row
 Through hole pin header THT 1x12 2.54mm single row
@@ -44890,6 +44897,20 @@ SMT-JUMPER_3_2-NC_TRACE_SILK
 0
 3
 3
+Feather-NEO-M9N-GPS
+SOD2513X110N
+SOD323
+Diode
+0
+2
+2
+Feather-NEO-M9N-GPS
+SOT-23-5
+5-pin SOT23 package
+SOT-23-5
+0
+5
+5
 Feather-NEO-M9N-GPS
 SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip
@@ -73583,3 +73604,136 @@ varistor SIOV
 0
 2
 2
+ubloxLib
+CAM-M8
+<b>CAM-M8:</b> 31 Pin<p>
+<a href="http://www.u-blox.com">u-blox.com</a>
+0
+0
+31
+31
+ubloxLib
+ELLA-30
+<b>ELLA-W1:</b> Castellated Package 30 Pin<p>
+0
+0
+0
+30
+30
+ubloxLib
+EMMI-52
+0
+0
+0
+0
+52
+52
+ubloxLib
+0
+0
+0
+0
+43
+43
+ubloxLib
+0
+0
+0
+0
+28
+28
+ubloxLib
+0
+0
+0
+
+0
+50
+50
+0
+0
+0
+<a href="http://www.u-blox.com">u-blox.com</a>
+
+0
+37
+37
+0
+0
+<b>LISA-U2:</b> Castellated Package 76 Pin<p>
+<a href="http://www.u-blox.com">u-blox.com</a>
+
+0
+76
+76
+0
+MAX-M8
+u-blox MAX GNSS module
+
+0
+18
+18
+0
+NEO-M8
+u-blox NEO GNSS module
+
+0
+24
+24
+0
+NINA111-42
+<b>NINA-B111:</b> LGA Package 42 Pin<p>
+<a href="http://www.u-blox.com">u-blox.com</a>
+
+0
+42
+42
+ubloxLib
+NINA112-42
+<b>NINA-B111:</b> LGA Package 42 Pin<p>
+<a href="http://www.u-blox.com">u-blox.com</a>
+0
+0
+42
+42
+ubloxLib
+ODIN-69
+<b>ODIN-W1:</b> 69 pin<p>
+0
+0
+0
+69
+69
+ubloxLib
+ODIN-88
+0
+0
+0
+0
+103
+103
+ubloxLib
+0
+0
+0
+0
+20
+20
+ubloxLib
+0
+0
+0
+
+0
+96
+96
+0
+0
+0
+<a href="http://www.u-blox.com">u-blox.com</a>
+
+0
+63
+63
+0
+0
