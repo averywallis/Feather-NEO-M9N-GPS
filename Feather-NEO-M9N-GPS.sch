@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RF_GPS:u-blox_NEO-M9N U1
-U 1 1 5E028BBB
-P 5550 3950
-F 0 "U1" H 5500 4900 50  0000 C CNN
-F 1 "NEO-M9N" H 5500 4800 50  0000 C CNN
-F 2 "Feather-NEO-M9N-GPS:NEO-M9N" H 5950 3100 50  0001 C CNN
-F 3 "https://www.u-blox.com/sites/default/files/NEO-M8-FW3_DataSheet_%28UBX-15031086%29.pdf" H 5550 3950 50  0001 C CNN
-	1    5550 3950
-	1    0    0    -1  
-$EndComp
 Text Label 10550 750  2    50   ~ 0
 BAT
 Text Label 10550 850  2    50   ~ 0
@@ -52,8 +41,6 @@ Wire Wire Line
 Wire Wire Line
 	10550 1550 10650 1550
 Wire Wire Line
-	10650 1450 10550 1450
-Wire Wire Line
 	10550 950  10650 950 
 Wire Wire Line
 	10650 850  10550 850 
@@ -65,7 +52,7 @@ U 1 1 5E04F327
 P 6600 3450
 F 0 "R1" V 6550 3300 50  0000 C CNN
 F 1 "33" V 6550 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6640 3440 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6640 3440 50  0001 C CNN
 F 3 "https://datasheet.octopart.com/ESR03EZPJ330-Rohm-datasheet-12521351.pdf" H 6600 3450 50  0001 C CNN
 F 4 "ESR03EZPJ330" V 6600 3450 50  0001 C CNN "MPN"
 	1    6600 3450
@@ -77,7 +64,7 @@ U 1 1 5E051E01
 P 6600 3550
 F 0 "R2" V 6550 3400 50  0000 C CNN
 F 1 "33" V 6550 3650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6640 3540 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6640 3540 50  0001 C CNN
 F 3 "https://datasheet.octopart.com/ESR03EZPJ330-Rohm-datasheet-12521351.pdf" H 6600 3550 50  0001 C CNN
 F 4 "ESR03EZPJ330" V 6600 3550 50  0001 C CNN "MPN"
 	1    6600 3550
@@ -89,7 +76,7 @@ U 1 1 5E051F51
 P 6600 3800
 F 0 "R3" V 6550 3650 50  0000 C CNN
 F 1 "33" V 6550 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6640 3790 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6640 3790 50  0001 C CNN
 F 3 "https://datasheet.octopart.com/ESR03EZPJ330-Rohm-datasheet-12521351.pdf" H 6600 3800 50  0001 C CNN
 F 4 "ESR03EZPJ330" V 6600 3800 50  0001 C CNN "MPN"
 	1    6600 3800
@@ -101,7 +88,7 @@ U 1 1 5E0522FF
 P 6600 3900
 F 0 "R4" V 6550 3750 50  0000 C CNN
 F 1 "33" V 6550 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6640 3890 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6640 3890 50  0001 C CNN
 F 3 "https://datasheet.octopart.com/ESR03EZPJ330-Rohm-datasheet-12521351.pdf" H 6600 3900 50  0001 C CNN
 F 4 "ESR03EZPJ330" V 6600 3900 50  0001 C CNN "MPN"
 	1    6600 3900
@@ -173,35 +160,8 @@ Wire Wire Line
 Wire Wire Line
 	3100 3750 4850 3750
 NoConn ~ 4850 3850
-$Comp
-L power:GND #PWR0108
-U 1 1 5E079BD8
-P 4700 4850
-F 0 "#PWR0108" H 4700 4600 50  0001 C CNN
-F 1 "GND" V 4705 4722 50  0000 R CNN
-F 2 "" H 4700 4850 50  0001 C CNN
-F 3 "" H 4700 4850 50  0001 C CNN
-	1    4700 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 4850 4700 4700
-Wire Wire Line
-	4700 4700 4850 4700
 Wire Wire Line
 	4600 4100 4850 4100
-$Comp
-L Device:R_US R8
-U 1 1 5E07D1C1
-P 4600 4550
-F 0 "R8" V 4700 4450 50  0000 C CNN
-F 1 "100k" V 4700 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4640 4540 50  0001 C CNN
-F 3 "https://datasheet.octopart.com/ESR03EZPF1003-Rohm-datasheet-79607656.pdf" H 4600 4550 50  0001 C CNN
-F 4 "ESR03EZPF1003" V 4600 4550 50  0001 C CNN "MPN"
-	1    4600 4550
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4600 4400 4600 4100
 Connection ~ 4600 4100
@@ -209,9 +169,6 @@ Wire Wire Line
 	4500 4200 4850 4200
 Wire Wire Line
 	4850 4300 4500 4300
-Wire Wire Line
-	4600 4700 4700 4700
-Connection ~ 4700 4700
 Text Label 3950 4200 2    50   ~ 0
 D+
 Text Label 3950 4300 2    50   ~ 0
@@ -305,15 +262,15 @@ F 3 "" H 2500 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 4650 2500 4550
-Text Label 6400 3250 0    50   ~ 0
+Text Label 7000 3250 0    50   ~ 0
 ~RESET_GPS
-Text Label 6400 3350 0    50   ~ 0
+Text Label 7000 3350 0    50   ~ 0
 INT
 Text Label 6450 4000 0    50   ~ 0
 D_SEL
-Text Label 6450 4250 0    50   ~ 0
+Text Label 6950 4250 0    50   ~ 0
 PPS
-Text Label 6450 4350 0    50   ~ 0
+Text Label 6950 4350 0    50   ~ 0
 ~SAFE
 $Comp
 L Device:D_Schottky D1
@@ -460,7 +417,7 @@ L Device:R_US R13
 U 1 1 5E0CF162
 P 2500 6250
 F 0 "R13" V 2450 6100 50  0000 C CNN
-F 1 "1k" V 2450 6350 50  0000 C CNN
+F 1 "500" V 2450 6350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2540 6240 50  0001 C CNN
 F 3 "https://datasheet.octopart.com/ESR03EZPJ102-Rohm-datasheet-12521351.pdf" H 2500 6250 50  0001 C CNN
 F 4 "ESR03EZPJ102" V 2500 6250 50  0001 C CNN "MPN"
@@ -508,75 +465,54 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_2_Open JP4
 U 1 1 5E0E4C83
-P 4350 8800
-F 0 "JP4" V 4304 8868 50  0000 L CNN
-F 1 "SPI1" V 4395 8868 50  0000 L CNN
-F 2 "~Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4350 8800 50  0001 C CNN
-F 3 "~" H 4350 8800 50  0001 C CNN
-	1    4350 8800
+P 4100 6200
+F 0 "JP4" V 4054 6268 50  0000 L CNN
+F 1 "SPI" V 4145 6268 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4100 6200 50  0001 C CNN
+F 3 "~" H 4100 6200 50  0001 C CNN
+	1    4100 6200
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0119
 U 1 1 5E0E56AD
-P 4350 9050
-F 0 "#PWR0119" H 4350 8800 50  0001 C CNN
-F 1 "GND" H 4600 9000 50  0000 R CNN
-F 2 "" H 4350 9050 50  0001 C CNN
-F 3 "" H 4350 9050 50  0001 C CNN
-	1    4350 9050
+P 4100 6450
+F 0 "#PWR0119" H 4100 6200 50  0001 C CNN
+F 1 "GND" H 4350 6400 50  0000 R CNN
+F 2 "" H 4100 6450 50  0001 C CNN
+F 3 "" H 4100 6450 50  0001 C CNN
+	1    4100 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R14
 U 1 1 5E0E58E0
-P 3700 6400
-F 0 "R14" V 3650 6250 50  0000 C CNN
-F 1 "10k" V 3650 6500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3740 6390 50  0001 C CNN
-F 3 "https://datasheet.octopart.com/ESR03EZPJ103-Rohm-datasheet-8326825.pdf" H 3700 6400 50  0001 C CNN
-F 4 "ESR03EZPJ103" V 3700 6400 50  0001 C CNN "MPN"
-	1    3700 6400
+P 4100 5750
+F 0 "R14" V 4050 5600 50  0000 C CNN
+F 1 "10k" V 4050 5850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4140 5740 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/ESR03EZPJ103-Rohm-datasheet-8326825.pdf" H 4100 5750 50  0001 C CNN
+F 4 "ESR03EZPJ103" V 4100 5750 50  0001 C CNN "MPN"
+	1    4100 5750
 	-1   0    0    1   
 $EndComp
-Text Label 3550 6650 2    50   ~ 0
-D_SEL
 Wire Wire Line
-	3550 6650 3700 6650
-Wire Wire Line
-	3700 6650 3700 6550
-Connection ~ 3700 6650
-Wire Wire Line
-	3700 6650 3700 6750
-Wire Wire Line
-	4350 8950 4350 9050
+	4100 6350 4100 6450
 $Comp
 L power:+3.3V #PWR0120
 U 1 1 5E0F15FA
-P 3700 6000
-F 0 "#PWR0120" H 3700 5850 50  0001 C CNN
-F 1 "+3.3V" H 3600 6150 50  0000 L CNN
-F 2 "" H 3700 6000 50  0001 C CNN
-F 3 "" H 3700 6000 50  0001 C CNN
-	1    3700 6000
+P 4100 5350
+F 0 "#PWR0120" H 4100 5200 50  0001 C CNN
+F 1 "+3.3V" H 4000 5500 50  0000 L CNN
+F 2 "" H 4100 5350 50  0001 C CNN
+F 3 "" H 4100 5350 50  0001 C CNN
+	1    4100 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 6000 3700 6250
-Text Notes 4650 8850 0    50   ~ 0
-Though not used,\nClose to enable SPI
-$Comp
-L Device:R_US R11
-U 1 1 5E0F6C01
-P 5500 6000
-F 0 "R11" V 5450 5850 50  0000 C CNN
-F 1 "2.2k" V 5450 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5540 5990 50  0001 C CNN
-F 3 "https://datasheet.octopart.com/ESR03EZPJ222-Rohm-datasheet-101746591.pdf" H 5500 6000 50  0001 C CNN
-F 4 "ESR03EZPJ222" V 5500 6000 50  0001 C CNN "MPN"
-	1    5500 6000
-	-1   0    0    1   
-$EndComp
+	4100 5350 4100 5600
+Text Notes 3100 6300 0    50   ~ 0
+Close to Enable SPI\nOpen enables UART, I2C
 $Comp
 L Device:R_US R10
 U 1 1 5E0FC663
@@ -590,8 +526,6 @@ F 4 "ESR03EZPJ222" V 6500 5950 50  0001 C CNN "MPN"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5500 5850 5500 5650
-Wire Wire Line
 	6500 5650 6500 5800
 Text Label 5700 6250 0    50   ~ 0
 SDA
@@ -601,10 +535,6 @@ Wire Wire Line
 	6500 6100 6500 6250
 Wire Wire Line
 	6500 6250 6700 6250
-Wire Wire Line
-	5500 6150 5500 6250
-Wire Wire Line
-	5500 6250 5700 6250
 $Comp
 L power:+3.3V #PWR0121
 U 1 1 5E10A15F
@@ -616,36 +546,20 @@ F 3 "" H 6000 5350 50  0001 C CNN
 	1    6000 5350
 	1    0    0    -1  
 $EndComp
-Text Label 7900 3450 0    50   ~ 0
-SDA\~CS
-Text Label 7900 3550 0    50   ~ 0
-SCL\SCK
-Wire Wire Line
-	6850 3450 6750 3450
-Wire Wire Line
-	6750 3550 6850 3550
-Text Label 7900 3800 0    50   ~ 0
-TX0\MISO
-Text Label 7900 3900 0    50   ~ 0
-RXI\MOSI
-Wire Wire Line
-	6850 3800 6750 3800
-Wire Wire Line
-	6750 3900 6850 3900
-Text Label 8300 9500 2    50   ~ 0
+Text Label 15750 2450 2    50   ~ 0
 ~SAFE
-Text Label 8300 9600 2    50   ~ 0
+Text Label 15750 2550 2    50   ~ 0
 INT
-Text Label 8300 9700 2    50   ~ 0
+Text Label 15750 2650 2    50   ~ 0
 PPS
 Wire Wire Line
-	8450 9400 8300 9400
+	15900 2350 15750 2350
 Wire Wire Line
-	8300 9500 8450 9500
+	15750 2450 15900 2450
 Wire Wire Line
-	8450 9600 8300 9600
+	15900 2550 15750 2550
 Wire Wire Line
-	8300 9700 8450 9700
+	15750 2650 15900 2650
 Text Label 3100 3650 0    50   ~ 0
 RF
 Wire Wire Line
@@ -712,69 +626,65 @@ F 4 "MS621FE-FL11E" H 1200 2500 50  0001 C CNN "MPN"
 	1    1200 2500
 	1    0    0    -1  
 $EndComp
-Text Notes 6900 8950 0    50   ~ 0
+Text Notes 14350 1800 0    50   ~ 0
 Available Feather Pins
 Wire Wire Line
-	7150 9050 7050 9050
+	14600 2000 14500 2000
 Wire Wire Line
-	7050 9150 7150 9150
+	14500 2100 14600 2100
 Wire Wire Line
-	7150 9250 7050 9250
+	14600 2200 14500 2200
 Wire Wire Line
-	7050 9350 7150 9350
+	14500 2300 14600 2300
 Wire Wire Line
-	7150 9450 7050 9450
+	14600 2400 14500 2400
 Wire Wire Line
-	7050 9550 7150 9550
+	14500 2500 14600 2500
 Wire Wire Line
-	7150 9650 7050 9650
-Text Label 7050 9650 2    50   ~ 0
+	14600 2600 14500 2600
+Text Label 14500 2600 2    50   ~ 0
 5`
-Text Label 7050 9550 2    50   ~ 0
+Text Label 14500 2500 2    50   ~ 0
 6
-Text Label 7050 9450 2    50   ~ 0
+Text Label 14500 2400 2    50   ~ 0
 9`
-Text Label 7050 9350 2    50   ~ 0
+Text Label 14500 2300 2    50   ~ 0
 10`
-Text Label 7050 9250 2    50   ~ 0
+Text Label 14500 2200 2    50   ~ 0
 11`
-Text Label 7050 9150 2    50   ~ 0
+Text Label 14500 2100 2    50   ~ 0
 12
-Text Label 7050 9050 2    50   ~ 0
+Text Label 14500 2000 2    50   ~ 0
 13
 $Comp
 L Connector_Generic:Conn_01x07 J5
 U 1 1 5E0918C9
-P 7350 9350
-F 0 "J5" H 7430 9296 50  0000 L CNN
-F 1 "~" H 7430 9251 50  0001 L CNN
-F 2 "~Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 7350 9350 50  0001 C CNN
-F 3 "~" H 7350 9350 50  0001 C CNN
-	1    7350 9350
+P 14800 2300
+F 0 "J5" H 14880 2246 50  0000 L CNN
+F 1 "~" H 14880 2201 50  0001 L CNN
+F 2 "~Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 14800 2300 50  0001 C CNN
+F 3 "~" H 14800 2300 50  0001 C CNN
+	1    14800 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 5E11DB91
-P 8650 9500
-F 0 "J4" H 8730 9446 50  0000 L CNN
-F 1 "~" H 8730 9401 50  0001 L CNN
-F 2 "~Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8650 9500 50  0001 C CNN
-F 3 "~" H 8650 9500 50  0001 C CNN
-	1    8650 9500
+P 16100 2450
+F 0 "J4" H 16180 2396 50  0000 L CNN
+F 1 "~" H 16180 2351 50  0001 L CNN
+F 2 "~Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 16100 2450 50  0001 C CNN
+F 3 "~" H 16100 2450 50  0001 C CNN
+	1    16100 2450
 	1    0    0    -1  
 $EndComp
-Text Notes 7750 3350 0    50   ~ 0
-Possible Pin Uses
 Wire Wire Line
 	10650 1750 10550 1750
-Text Label 7250 3800 0    50   ~ 0
+Text Label 8150 4350 3    50   ~ 0
 TX
-Text Label 7250 3900 0    50   ~ 0
-RX
-Text Label 7250 3550 0    50   ~ 0
+Text Label 8350 3050 1    50   ~ 0
 SCL
-Text Label 7250 3450 0    50   ~ 0
+Text Label 7700 2950 1    50   ~ 0
 SDA
 Wire Wire Line
 	10250 3400 10650 3400
@@ -784,8 +694,6 @@ Text Label 10250 3400 2    50   ~ 0
 RX
 Text Label 10250 3500 2    50   ~ 0
 TX
-Text Notes 9500 3000 0    50   ~ 0
-Possible Pin Uses
 Wire Wire Line
 	10550 1850 10650 1850
 $Comp
@@ -799,16 +707,6 @@ F 3 "~" H 10850 1250 50  0001 C CNN
 	1    10850 1250
 	1    0    0    -1  
 $EndComp
-Text Label 9900 3100 2    50   ~ 0
-SCL\SCK
-Text Label 9900 3200 2    50   ~ 0
-RXI\MOSI
-Text Label 9900 3300 2    50   ~ 0
-TX0\MISO
-Text Label 9900 3400 2    50   ~ 0
-TX0\MISO
-Text Label 9900 3500 2    50   ~ 0
-RXI\MOSI
 Wire Wire Line
 	10550 2100 10650 2100
 Wire Wire Line
@@ -890,18 +788,14 @@ F 3 "~" H 10850 2800 50  0001 C CNN
 	1    10850 2800
 	1    0    0    -1  
 $EndComp
-Text Label 4200 8600 2    50   ~ 0
+Text Label 3950 6000 2    50   ~ 0
 D_SEL
 Wire Wire Line
-	4200 8600 4350 8600
+	3950 6000 4100 6000
 Wire Wire Line
-	4350 8600 4350 8650
-Text Label 8300 9400 2    50   ~ 0
+	4100 6000 4100 6050
+Text Label 15750 2350 2    50   ~ 0
 ~RESET_GPS
-Wire Wire Line
-	6400 3250 6250 3250
-Wire Wire Line
-	6250 3350 6400 3350
 Wire Wire Line
 	6250 4000 6450 4000
 Wire Wire Line
@@ -919,55 +813,40 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_2_Bridged JP7
 U 1 1 5E2241A7
-P 7000 3550
-F 0 "JP7" H 6800 3650 50  0000 L CNN
-F 1 "SCL" H 7050 3650 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7000 3550 50  0001 C CNN
-F 3 "~" H 7000 3550 50  0001 C CNN
-	1    7000 3550
-	-1   0    0    1   
+P 8350 3300
+F 0 "JP7" H 8150 3400 50  0000 L CNN
+F 1 "SCL" H 8400 3400 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8350 3300 50  0001 C CNN
+F 3 "~" H 8350 3300 50  0001 C CNN
+	1    8350 3300
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP6
 U 1 1 5E2257C1
-P 7000 3450
-F 0 "JP6" H 6800 3400 50  0000 L CNN
-F 1 "SDA" H 7050 3400 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7000 3450 50  0001 C CNN
-F 3 "~" H 7000 3450 50  0001 C CNN
-	1    7000 3450
-	-1   0    0    1   
+P 7700 3200
+F 0 "JP6" H 7500 3150 50  0000 L CNN
+F 1 "SDA" H 7750 3150 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7700 3200 50  0001 C CNN
+F 3 "~" H 7700 3200 50  0001 C CNN
+	1    7700 3200
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7150 3450 7250 3450
+	7700 3050 7700 2950
 Wire Wire Line
-	7250 3550 7150 3550
-$Comp
-L Jumper:SolderJumper_2_Open JP8
-U 1 1 5E24013F
-P 7000 3800
-F 0 "JP8" H 7100 3850 50  0000 L CNN
-F 1 "TX" H 6850 3850 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7000 3800 50  0001 C CNN
-F 3 "~" H 7000 3800 50  0001 C CNN
-	1    7000 3800
-	1    0    0    -1  
-$EndComp
+	8350 3050 8350 3150
 $Comp
 L Jumper:SolderJumper_2_Open JP9
 U 1 1 5E241137
-P 7000 3900
-F 0 "JP9" H 6750 4000 50  0000 L CNN
-F 1 "RX" H 7050 4000 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7000 3900 50  0001 C CNN
-F 3 "~" H 7000 3900 50  0001 C CNN
-	1    7000 3900
-	-1   0    0    1   
+P 7550 4100
+F 0 "JP9" H 7300 4200 50  0000 L CNN
+F 1 "RX" H 7600 4200 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7550 4100 50  0001 C CNN
+F 3 "~" H 7550 4100 50  0001 C CNN
+	1    7550 4100
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7250 3800 7150 3800
-Wire Wire Line
-	7150 3900 7250 3900
 Text Label 9750 1050 2    50   ~ 0
 INT
 Text Label 9750 1150 2    50   ~ 0
@@ -1113,10 +992,6 @@ Wire Wire Line
 	6000 5500 6000 5350
 Wire Wire Line
 	6200 5650 6500 5650
-Wire Wire Line
-	5800 5650 5500 5650
-Text Notes 5500 6450 0    50   ~ 0
-7-bit unshifted I2C address: 0x42
 $Comp
 L Regulator_Linear:AP2112K-3.3 U2
 U 1 1 5E148816
@@ -1236,7 +1111,7 @@ F 3 "" H 9500 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9500 2200 9750 2200
-Text Notes 9100 1900 0    30   ~ 0
+Text Notes 9400 1950 0    30   ~ 0
 Diode prevents reverse powering Feather
 Wire Wire Line
 	5450 1100 5450 900 
@@ -1353,7 +1228,7 @@ L Jumper:SolderJumper_2_Open JP5
 U 1 1 5E2BB15F
 P 10150 1350
 F 0 "JP5" H 10300 1300 50  0000 L CNN
-F 1 "~RESET_GPS" H 9600 1250 50  0000 L CNN
+F 1 "~RST GPS" H 9600 1250 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 10150 1350 50  0001 C CNN
 F 3 "~" H 10150 1350 50  0001 C CNN
 	1    10150 1350
@@ -1376,4 +1251,261 @@ F 4 "U.FL-R-SMT(10)" H 2750 4100 50  0001 L CNN "MPN"
 	1    1800 4500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_US R18
+U 1 1 5E3A11E1
+P 6600 4250
+F 0 "R18" V 6550 4100 50  0000 C CNN
+F 1 "33" V 6550 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6640 4240 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/ESR03EZPJ330-Rohm-datasheet-12521351.pdf" H 6600 4250 50  0001 C CNN
+F 4 "ESR03EZPJ330" V 6600 4250 50  0001 C CNN "MPN"
+	1    6600 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5900 4100 6000
+Connection ~ 4100 6000
+$Comp
+L Device:R_US R19
+U 1 1 5E3D5EFC
+P 6600 4350
+F 0 "R19" V 6550 4200 50  0000 C CNN
+F 1 "33" V 6550 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6640 4340 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/ESR03EZPJ330-Rohm-datasheet-12521351.pdf" H 6600 4350 50  0001 C CNN
+F 4 "ESR03EZPJ330" V 6600 4350 50  0001 C CNN "MPN"
+	1    6600 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 4250 6750 4250
+Wire Wire Line
+	6750 4350 6950 4350
+$Comp
+L Device:R_US R17
+U 1 1 5E3E50E6
+P 6600 3350
+F 0 "R17" V 6550 3200 50  0000 C CNN
+F 1 "33" V 6550 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6640 3340 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/ESR03EZPJ330-Rohm-datasheet-12521351.pdf" H 6600 3350 50  0001 C CNN
+F 4 "ESR03EZPJ330" V 6600 3350 50  0001 C CNN "MPN"
+	1    6600 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R16
+U 1 1 5E3E55AF
+P 6600 3250
+F 0 "R16" V 6550 3100 50  0000 C CNN
+F 1 "33" V 6550 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6640 3240 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/ESR03EZPJ330-Rohm-datasheet-12521351.pdf" H 6600 3250 50  0001 C CNN
+F 4 "ESR03EZPJ330" V 6600 3250 50  0001 C CNN "MPN"
+	1    6600 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 3250 6450 3250
+Wire Wire Line
+	6250 3350 6450 3350
+Wire Wire Line
+	6750 3250 7000 3250
+Wire Wire Line
+	7000 3350 6750 3350
+Text Notes 5500 6450 0    50   ~ 0
+7-bit unshifted I2C address: 0x42
+Wire Wire Line
+	5800 5650 5500 5650
+Wire Wire Line
+	5500 6250 5700 6250
+Wire Wire Line
+	5500 6150 5500 6250
+Wire Wire Line
+	5500 5850 5500 5650
+$Comp
+L Device:R_US R11
+U 1 1 5E0F6C01
+P 5500 6000
+F 0 "R11" V 5450 5850 50  0000 C CNN
+F 1 "2.2k" V 5450 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5540 5990 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/ESR03EZPJ222-Rohm-datasheet-101746591.pdf" H 5500 6000 50  0001 C CNN
+F 4 "ESR03EZPJ222" V 5500 6000 50  0001 C CNN "MPN"
+	1    5500 6000
+	-1   0    0    1   
+$EndComp
+Connection ~ 4700 4700
+Wire Wire Line
+	4600 4700 4700 4700
+$Comp
+L Device:R_US R8
+U 1 1 5E07D1C1
+P 4600 4550
+F 0 "R8" V 4700 4450 50  0000 C CNN
+F 1 "100k" V 4700 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4640 4540 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/ESR03EZPF1003-Rohm-datasheet-79607656.pdf" H 4600 4550 50  0001 C CNN
+F 4 "ESR03EZPF1003" V 4600 4550 50  0001 C CNN "MPN"
+	1    4600 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 4700 4850 4700
+Wire Wire Line
+	4700 4850 4700 4700
+$Comp
+L power:GND #PWR0108
+U 1 1 5E079BD8
+P 4700 4850
+F 0 "#PWR0108" H 4700 4600 50  0001 C CNN
+F 1 "GND" V 4705 4722 50  0000 R CNN
+F 2 "" H 4700 4850 50  0001 C CNN
+F 3 "" H 4700 4850 50  0001 C CNN
+	1    4700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_GPS:u-blox_NEO-M9N U1
+U 1 1 5E028BBB
+P 5550 3950
+F 0 "U1" H 5500 4900 50  0000 C CNN
+F 1 "NEO-M9N" H 5500 4800 50  0000 C CNN
+F 2 "Feather-NEO-M9N-GPS:NEO-M9N" H 5950 3100 50  0001 C CNN
+F 3 "https://www.u-blox.com/sites/default/files/NEO-M8-FW3_DataSheet_%28UBX-15031086%29.pdf" H 5550 3950 50  0001 C CNN
+	1    5550 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 14050 950  0    197  ~ 0
+Aspects not implemented\ndue to size restrictions
+$Comp
+L Jumper:SolderJumper_2_Open JP14
+U 1 1 5E4C5574
+P 8400 4100
+F 0 "JP14" H 8500 4200 50  0000 L CNN
+F 1 "MOSI" H 8200 4200 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8400 4100 50  0001 C CNN
+F 3 "~" H 8400 4100 50  0001 C CNN
+	1    8400 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP13
+U 1 1 5E4C581B
+P 7850 4100
+F 0 "JP13" H 7650 4200 50  0000 L CNN
+F 1 "MISO" H 7850 4200 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7850 4100 50  0001 C CNN
+F 3 "~" H 7850 4100 50  0001 C CNN
+	1    7850 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 4350 7550 4250
+$Comp
+L Jumper:SolderJumper_2_Open JP8
+U 1 1 5E24013F
+P 8150 4100
+F 0 "JP8" H 8250 4050 50  0000 L CNN
+F 1 "TX" H 8000 4050 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8150 4100 50  0001 C CNN
+F 3 "~" H 8150 4100 50  0001 C CNN
+	1    8150 4100
+	0    1    1    0   
+$EndComp
+Text Label 7550 4350 3    50   ~ 0
+RX
+Wire Wire Line
+	7550 3900 7550 3950
+Wire Wire Line
+	6750 3900 7550 3900
+Wire Wire Line
+	7550 3900 7850 3900
+Wire Wire Line
+	7850 3900 7850 3950
+Connection ~ 7550 3900
+Wire Wire Line
+	6750 3800 8150 3800
+Wire Wire Line
+	8150 3800 8150 3950
+Wire Wire Line
+	8150 3800 8400 3800
+Wire Wire Line
+	8400 3800 8400 3950
+Connection ~ 8150 3800
+Wire Wire Line
+	8150 4350 8150 4250
+Text Label 7850 4350 3    50   ~ 0
+MISO
+Text Label 8400 4350 3    50   ~ 0
+MOSI
+Wire Wire Line
+	7850 4250 7850 4350
+Wire Wire Line
+	8400 4250 8400 4350
+Wire Wire Line
+	10550 3100 10650 3100
+Wire Wire Line
+	10650 3200 10550 3200
+Wire Wire Line
+	10550 3300 10650 3300
+$Comp
+L Jumper:SolderJumper_2_Open JP16
+U 1 1 5E5C4E39
+P 7950 3200
+F 0 "JP16" H 8050 3300 50  0000 L CNN
+F 1 "~CS" H 7750 3300 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7950 3200 50  0001 C CNN
+F 3 "~" H 7950 3200 50  0001 C CNN
+	1    7950 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP15
+U 1 1 5E5C545C
+P 8600 3300
+F 0 "JP15" H 8700 3400 50  0000 L CNN
+F 1 "SCK" H 8400 3400 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8600 3300 50  0001 C CNN
+F 3 "~" H 8600 3300 50  0001 C CNN
+	1    8600 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 3550 8350 3450
+Wire Wire Line
+	6750 3550 8350 3550
+Wire Wire Line
+	8350 3550 8600 3550
+Wire Wire Line
+	8600 3550 8600 3450
+Connection ~ 8350 3550
+Text Label 8600 3050 1    50   ~ 0
+SCK
+Wire Wire Line
+	8600 3050 8600 3150
+Text Label 10050 1600 2    50   ~ 0
+~CS
+Text Label 7950 2950 1    50   ~ 0
+~CS
+Wire Wire Line
+	7950 2950 7950 3050
+Wire Wire Line
+	10050 1600 10150 1600
+Wire Wire Line
+	10150 1600 10150 1450
+Wire Wire Line
+	10150 1450 10650 1450
+Wire Wire Line
+	7700 3450 7700 3350
+Wire Wire Line
+	6750 3450 7700 3450
+Wire Wire Line
+	7950 3350 7950 3450
+Wire Wire Line
+	7950 3450 7700 3450
+Connection ~ 7700 3450
+Text Notes 15450 2150 0    47   ~ 0
+Choose which pin for digital I/O
 $EndSCHEMATC
