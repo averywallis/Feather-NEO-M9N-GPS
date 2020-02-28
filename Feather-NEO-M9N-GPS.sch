@@ -710,14 +710,6 @@ $EndComp
 Wire Wire Line
 	10550 2100 10650 2100
 Wire Wire Line
-	10650 2300 10550 2300
-Wire Wire Line
-	10450 2400 10650 2400
-Wire Wire Line
-	10650 2500 10550 2500
-Wire Wire Line
-	10550 2600 10650 2600
-Wire Wire Line
 	10650 2700 10550 2700
 Wire Wire Line
 	10550 2800 10650 2800
@@ -738,17 +730,6 @@ F 3 "" H 10450 3600 50  0001 C CNN
 	1    10450 3600
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5E033090
-P 10450 2400
-F 0 "#PWR0102" H 10450 2150 50  0001 C CNN
-F 1 "GND" V 10455 2272 50  0000 R CNN
-F 2 "" H 10450 2400 50  0001 C CNN
-F 3 "" H 10450 2400 50  0001 C CNN
-	1    10450 2400
-	0    1    1    0   
-$EndComp
 Text Label 10550 3500 2    50   ~ 0
 TXO
 Text Label 10550 3400 2    50   ~ 0
@@ -767,27 +748,10 @@ Text Label 10550 2800 2    50   ~ 0
 A3
 Text Label 10550 2700 2    50   ~ 0
 A2
-Text Label 10550 2600 2    50   ~ 0
-A1
-Text Label 10550 2500 2    50   ~ 0
-A0
-Text Label 10550 2300 2    50   ~ 0
-ARf
 Text Label 10550 2100 2    50   ~ 0
 RST
 Text Label 10550 1850 2    50   ~ 0
 SDA
-$Comp
-L Connector_Generic:Conn_01x16 J2
-U 1 1 5E02C961
-P 10850 2800
-F 0 "J2" H 10930 2746 50  0000 L CNN
-F 1 "~" H 10930 2701 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10850 2800 50  0001 C CNN
-F 3 "~" H 10850 2800 50  0001 C CNN
-	1    10850 2800
-	1    0    0    -1  
-$EndComp
 Text Label 3950 6000 2    50   ~ 0
 D_SEL
 Wire Wire Line
@@ -1207,18 +1171,6 @@ Wire Wire Line
 	7550 1650 7550 1500
 Wire Wire Line
 	7300 1500 7300 1650
-$Comp
-L Device:D_Schottky D5
-U 1 1 5E207CC2
-P 9900 2200
-F 0 "D5" H 9900 2416 50  0000 C CNN
-F 1 "BAT60AE6327HTSA1" H 9900 2325 50  0000 C CNN
-F 2 "SOD2513X110N" H 10350 2200 50  0001 L CNN
-F 3 "https://datasheet.octopart.com/BAT60AE6327HTSA1-Infineon-datasheet-5316008.pdf" H 10350 2100 50  0001 L CNN
-F 4 "BAT60AE6327HTSA1" H 10350 1500 50  0001 L CNN "MPN"
-	1    9900 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10050 2200 10650 2200
 Text Label 9750 1350 2    50   ~ 0
@@ -1508,4 +1460,52 @@ Wire Wire Line
 Connection ~ 7700 3450
 Text Notes 15450 2150 0    47   ~ 0
 Choose which pin for digital I/O
+$Comp
+L Device:D_Schottky D5
+U 1 1 5E207CC2
+P 9900 2200
+F 0 "D5" H 9900 2416 50  0000 C CNN
+F 1 "BAT60AE6327HTSA1" H 9900 2325 50  0000 C CNN
+F 2 "SOD2513X110N" H 10350 2200 50  0001 L CNN
+F 3 "https://datasheet.octopart.com/BAT60AE6327HTSA1-Infineon-datasheet-5316008.pdf" H 10350 2100 50  0001 L CNN
+F 4 "BAT60AE6327HTSA1" H 10350 1500 50  0001 L CNN "MPN"
+	1    9900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J2
+U 1 1 5E02C961
+P 10850 2800
+F 0 "J2" H 10930 2746 50  0000 L CNN
+F 1 "~" H 10930 2701 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 10850 2800 50  0001 C CNN
+F 3 "~" H 10850 2800 50  0001 C CNN
+	1    10850 2800
+	1    0    0    -1  
+$EndComp
+Text Label 10550 2300 2    50   ~ 0
+ARf
+Text Label 10550 2500 2    50   ~ 0
+A0
+Text Label 10550 2600 2    50   ~ 0
+A1
+$Comp
+L power:GND #PWR0102
+U 1 1 5E033090
+P 10450 2400
+F 0 "#PWR0102" H 10450 2150 50  0001 C CNN
+F 1 "GND" V 10455 2272 50  0000 R CNN
+F 2 "" H 10450 2400 50  0001 C CNN
+F 3 "" H 10450 2400 50  0001 C CNN
+	1    10450 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10550 2600 10650 2600
+Wire Wire Line
+	10650 2500 10550 2500
+Wire Wire Line
+	10450 2400 10650 2400
+Wire Wire Line
+	10650 2300 10550 2300
 $EndSCHEMATC
