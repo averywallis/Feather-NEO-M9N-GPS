@@ -39,8 +39,6 @@ SCL
 Wire Wire Line
 	10650 1650 10550 1650
 Wire Wire Line
-	10550 1550 10650 1550
-Wire Wire Line
 	10550 950  10650 950 
 Wire Wire Line
 	10650 850  10550 850 
@@ -682,7 +680,7 @@ Wire Wire Line
 	10650 1750 10550 1750
 Text Label 8150 4350 3    50   ~ 0
 TX
-Text Label 8350 3050 1    50   ~ 0
+Text Label 8700 3050 1    50   ~ 0
 SCL
 Text Label 7700 2950 1    50   ~ 0
 SDA
@@ -777,12 +775,12 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_2_Bridged JP7
 U 1 1 5E2241A7
-P 8350 3300
-F 0 "JP7" H 8150 3400 50  0000 L CNN
-F 1 "SCL" H 8400 3400 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8350 3300 50  0001 C CNN
-F 3 "~" H 8350 3300 50  0001 C CNN
-	1    8350 3300
+P 8700 3300
+F 0 "JP7" H 8500 3400 50  0000 L CNN
+F 1 "SCL" H 8750 3400 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8700 3300 50  0001 C CNN
+F 3 "~" H 8700 3300 50  0001 C CNN
+	1    8700 3300
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -799,7 +797,7 @@ $EndComp
 Wire Wire Line
 	7700 3050 7700 2950
 Wire Wire Line
-	8350 3050 8350 3150
+	8700 3050 8700 3150
 $Comp
 L Jumper:SolderJumper_2_Open JP9
 U 1 1 5E241137
@@ -1416,27 +1414,25 @@ $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP15
 U 1 1 5E5C545C
-P 8600 3300
-F 0 "JP15" H 8700 3400 50  0000 L CNN
-F 1 "SCK" H 8400 3400 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8600 3300 50  0001 C CNN
-F 3 "~" H 8600 3300 50  0001 C CNN
-	1    8600 3300
+P 8950 3300
+F 0 "JP15" H 9050 3400 50  0000 L CNN
+F 1 "SCK" H 8750 3400 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8950 3300 50  0001 C CNN
+F 3 "~" H 8950 3300 50  0001 C CNN
+	1    8950 3300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8350 3550 8350 3450
+	8700 3550 8700 3450
 Wire Wire Line
-	6750 3550 8350 3550
+	8700 3550 8950 3550
 Wire Wire Line
-	8350 3550 8600 3550
-Wire Wire Line
-	8600 3550 8600 3450
-Connection ~ 8350 3550
-Text Label 8600 3050 1    50   ~ 0
+	8950 3550 8950 3450
+Connection ~ 8700 3550
+Text Label 8950 3050 1    50   ~ 0
 SCK
 Wire Wire Line
-	8600 3050 8600 3150
+	8950 3050 8950 3150
 Text Label 10050 1600 2    50   ~ 0
 ~CS
 Text Label 7950 2950 1    50   ~ 0
@@ -1508,4 +1504,34 @@ Wire Wire Line
 	10450 2400 10650 2400
 Wire Wire Line
 	10650 2300 10550 2300
+Wire Wire Line
+	6750 3550 8700 3550
+$Comp
+L Jumper:SolderJumper_2_Open JP17
+U 1 1 5E83C2E4
+P 8200 3200
+F 0 "JP17" H 8300 3300 50  0000 L CNN
+F 1 "~CS2" H 8000 3300 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8200 3200 50  0001 C CNN
+F 3 "~" H 8200 3200 50  0001 C CNN
+	1    8200 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 3350 8200 3450
+Wire Wire Line
+	8200 3450 7950 3450
+Connection ~ 7950 3450
+Text Label 8200 2950 1    50   ~ 0
+~CS2
+Wire Wire Line
+	8200 2950 8200 3050
+Text Label 10050 1700 2    50   ~ 0
+~CS2
+Wire Wire Line
+	10050 1700 10250 1700
+Wire Wire Line
+	10250 1700 10250 1550
+Wire Wire Line
+	10250 1550 10650 1550
 $EndSCHEMATC
