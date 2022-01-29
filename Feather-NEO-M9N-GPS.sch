@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Feather-NEO-M9N-GPS-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -878,7 +877,7 @@ F 3 "" H 2850 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J6
+L Feather-NEO-M9N-GPS-rescue:USB_B_Micro-Connector J6
 U 1 1 5E0DB57B
 P 2850 1100
 F 0 "J6" H 2907 1567 50  0000 C CNN
@@ -891,7 +890,7 @@ F 4 "47346-0001" H 2850 1100 50  0001 C CNN "MPN"
 $EndComp
 NoConn ~ 3150 1300
 $Comp
-L SamacSys_Parts:PRTR5V0U2F,115 IC1
+L Feather-NEO-M9N-GPS-rescue:PRTR5V0U2F,115-SamacSys_Parts IC1
 U 1 1 5E16E12C
 P 4300 1200
 F 0 "IC1" H 4300 1650 50  0000 C CNN
@@ -955,7 +954,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 5650 6500 5650
 $Comp
-L Regulator_Linear:AP2112K-3.3 U2
+L Feather-NEO-M9N-GPS-rescue:AP2112K-3.3-Regulator_Linear U2
 U 1 1 5E148816
 P 6900 1200
 F 0 "U2" H 6900 1542 50  0000 C CNN
@@ -1190,7 +1189,7 @@ Wire Wire Line
 	10300 1350 10650 1350
 Connection ~ 2500 3650
 $Comp
-L SamacSys_Parts:U.FL ANT1
+L Feather-NEO-M9N-GPS-rescue:U.FL-SamacSys_Parts ANT1
 U 1 1 5E064AD8
 P 1800 4500
 F 0 "ANT1" H 2150 5650 50  0000 C CNN
@@ -1317,7 +1316,7 @@ F 3 "" H 4700 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RF_GPS:u-blox_NEO-M9N U1
+L Feather-NEO-M9N-GPS-rescue:u-blox_NEO-M9N-RF_GPS U1
 U 1 1 5E028BBB
 P 5550 3950
 F 0 "U1" H 5500 4900 50  0000 C CNN

@@ -1507,10 +1507,10 @@ Wire Wire Line
 Wire Wire Line
 	6750 3550 8700 3550
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP17
 U 1 1 5E83C2E4
 P 8200 3200
-F 0 "JP?" H 8300 3300 50  0000 L CNN
+F 0 "JP17" H 8300 3300 50  0000 L CNN
 F 1 "~CS2" H 8000 3300 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8200 3200 50  0001 C CNN
 F 3 "~" H 8200 3200 50  0001 C CNN
